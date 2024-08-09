@@ -1,4 +1,0 @@
-bot_name='Meeting Agenda and Recap'
-bot_username='meeting-agenda-and-recap@webex.bot'
-bot_id='Y2lzY29zcGFyazovL3VzL0FQUExJQ0FUSU9OLzQyNzUwNzc3LTNmMzQtNDJlNi05NmIxLWY0MGFlMWQ0YzgyYw'
-bot_access_token='YjU2OGQwYmUtMjVmNi00ZjViLTg0YmItZTBiOTIzYjJlNzgwZGRjNTRlMTUtODVm_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f'
