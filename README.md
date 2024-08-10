@@ -59,7 +59,7 @@ pip3 install -r requirements.txt
 
 - Save the Bot Token, Bot Name, Bot Username, and Bot ID 
 
-- Determine the ID of the room you want to send the message to b first sending a message in that room
+- Determine the ID of the room you want to send the message to by first sending a message in that room
 and then going to https://developer.webex.com/docs/api/v1/rooms/list-rooms
 type 'lastactivity' in the 'sortBy' field and click send. Copy that RoomID to creds.py
 
@@ -105,10 +105,9 @@ $ represents the warning header (orange)
 * represents the attention bullet point (reddish)
 ```
 
-- The nesting of bullet points doens't function like it would normmally in markdown in Webex messaging.
+- The nesting of bullet points doens't function like it would normally in markdown in Webex messaging.
 
-- Once an agenda is sent, it cannot be edited as described [here](https://developer.webex.com/docs/api/v1/messages/edit-a-message) because it uses and adaptive card, which is treated an an attachment, this preventing editing.
-If you don't like an agenda, you should delete it from the space manually and send a new message.
+- Once an agenda is sent, it cannot be edited as described [here](https://developer.webex.com/docs/api/v1/messages/edit-a-message) because it uses an adaptive card, which is treated an an attachment, thus preventing editing. If you don't like an agenda, you should delete it from the space manually and send a new message.
 
 - The message is sensitive to spaces, so if you place a lot of lines between points, it will render a lot of space in the message.
 
