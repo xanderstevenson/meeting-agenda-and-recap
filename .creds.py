@@ -1,0 +1,5 @@
+BOT_NAME = ""
+BOT_USERNAME = ""
+BOT_ID = ""
+BOT_TOKEN = ""
+ROOM_ID = ""

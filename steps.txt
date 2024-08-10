@@ -10,9 +10,31 @@ Choose 'Create a Bot'
 
 Fill out the required fields and click 'Add Bot'
 
-Save the Bot Access Token and Bot ID to creds.py
+Save the Bot Token, Bot Name, Bot Username, and Bot ID 
 
 Determine the ID of the room you want to send the message to b first sending a message in that room
 and then going to https://developer.webex.com/docs/api/v1/rooms/list-rooms
 type 'lastactivity' in the 'sortBy' field and click send. Copy that RoomID to creds.py
 
+Copy the Room ID, along with the Bot Token, Name, Username, and Bot ID to .creds.py and rename it as creds.py
+
+
+
+* Custom formatting
+
+Regualar Webex markdown is enabled within the agenda message (see [Webex App | Markdown formats](https://help.webex.com/en-us/article/n7i55j5/Webex-App-%7C-Markdown-formats) for examples), but the following have been specially formatted
+
+! represents the accent header (blue)
+$ represents the warning header (orange)
+% represents the attention header (reddish)
+* represents the attention bullet point (reddish)
+
+
+
+
+* Notes
+
+- Once an agenda is sent, it cannot be edited as described [here](https://developer.webex.com/docs/api/v1/messages/edit-a-message) because it uses and adaptive card, which is treated an an attachment, this preventing editing.
+If you don't like an agenda, you should delete it from the space manually and send a new message.
+
+- The message is sensitive to spaces, so if you place a lot of lines between points, it will render a lot of space in the message.
