@@ -41,14 +41,10 @@ venv\Scripts\activate
 pip3 install -r requirements.txt
 ```
 <br>
-<br>
 
 
 
-<br>
-
-
-### **Step 3**: create the Webex Bot
+### **Step 4**: create the Webex Bot
 
 - Go to https://developer.webex.com/my-apps and 'Create a New App'
 
@@ -75,11 +71,18 @@ type 'lastactivity' in the 'sortBy' field and click send. Copy that RoomID to cr
 python3 send_agenda.py
 ```
 
+![image](https://github.com/user-attachments/assets/025bc15b-c289-46ee-a1dd-99597fd87297)
+
+
 or
 
 ```bash
 python3 send_recap.py
 ```
+
+![image](https://github.com/user-attachments/assets/ef085469-53ed-4fcc-813b-d5fc97c6bb5a)
+
+
 
 
 <br>
