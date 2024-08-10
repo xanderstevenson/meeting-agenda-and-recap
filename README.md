@@ -11,8 +11,8 @@ This is a pair of Python scripts which uses Adaptive Cards to post neat, organiz
 ### **Step 1**: Clone the parent repo and cd into this demo
 
 ```bash
-git clone https://github.com/xanderstevenson/webex-meeting-agenda-and-recap.git
-cd webex-meeting-agenda-and-recap
+git clone https://github.com/xanderstevenson/meeting-agenda-and-recap.git
+cd meeting-agenda-and-recap
 ```
 <br>
 
