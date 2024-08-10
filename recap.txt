@@ -1,7 +1,7 @@
 ! Apple IIc Engineering Connect
 19 August, 1987
 
-Thank you everyine for attedning this meeting; it was a huge success. Remember, if it can be handled over an email, you don't have to book a meeting ; )
+Thank you everyine for attedning this meeting; it was a huge success. 
 
 - - -
 **Attendees**: Tracy Smith, Bob Folger, Melissa Sein, Tony Tiger
@@ -11,26 +11,17 @@ Thank you everyine for attedning this meeting; it was a huge success. Remember, 
 **Next Scheduled Meeting**: January 1, 2000
 
 - - -
-
 $ APIs:
 
-1. Changelog requirement
+1. **Changelog requirement**
 - Where can we post it? (Webex, GitHub, X, etc.)
-* Post in the community
-
-
-2. Do we have any prioritized APIs?
-* Maybe, _visit_ [DevNet](https://developer.cisco.com)
-
-
+* We will post it on the [Cisco Community](https://community.cisco.com/t5/devnet-hub/ct-p/4409j-developer-home)
+2. **Do we have any prioritized APIs?**
+* Bob is looking into this and will update us next meeting
 
 - - -
-
 $ Learning Labs:
 
-1. Where to find **Learning Labs** labeled with "UCS" for Cisco Product?
-- [UCS labs](https://developer.cisco.com/learning/search/?contentType=track,module,lab&page=1&products=UCS&sortBy=luceneScore)
-
-- Are there any ML labs for this?
-* I don't know; I'll find out [here](https://cisco.com)
-
+1. **Where to find Learning Labs labeled with "UCS" for Cisco Product?**
+- Are there any learning labs for this?
+* Yes, they are [here](https://developer.cisco.com/learning/search/?contentType=track,module,lab&keyword=UCS&page=1&sortBy=luceneScore)

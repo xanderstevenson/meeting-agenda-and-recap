@@ -105,4 +105,10 @@ If you don't like an agenda, you should delete it from the space manually and se
 - The message is sensitive to spaces, so if you place a lot of lines between points, it will render a lot of space in the message.
 
 
+### Notes
 
+- The creds.py file is already in the .gitignore so it won't be pushed to GitHub but you should also add any other files to the .gitignore you don't want published to GitHub, should you choose to fork this repo.
+
+- You won't be able to post messages to a room until you've added your Bot to that Room
+
+- You will want to create or use a practice room to send drafts of your agenda/recap to to see if you like it before sending it to the official room
