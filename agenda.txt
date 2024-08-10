@@ -1,0 +1,27 @@
+! Apple IIc Engineering Connect
+19 August, 1987
+
+- - -
+
+$ APIs:
+
+1. Changelog requirement
+- Where can we post it? (Webex, GitHub, X, etc.)
+* Post in the community
+
+
+2. Do we have any prioritized APIs?
+* Maybe, _visit_ [DevNet](https://developer.cisco.com)
+
+
+
+- - -
+
+$ Learning Labs:
+
+1. Where to find **Learning Labs** labeled with "UCS" for Cisco Product?
+- [UCS labs](https://developer.cisco.com/learning/search/?contentType=track,module,lab&page=1&products=UCS&sortBy=luceneScore)
+
+- Are there any ML labs for this?
+* I don't know; I'll find out [here](https://cisco.com)
+
