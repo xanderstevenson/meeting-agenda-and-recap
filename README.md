@@ -1,4 +1,4 @@
-# Webex Meeting Agenda and Recap
+# Meeting Agenda and Recap
 
 ## Overview
 
