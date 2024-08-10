@@ -90,10 +90,12 @@ python3 send_recap.py
 
 - Regualar Webex markdown is enabled within the agenda message (see [Webex App | Markdown formats](https://help.webex.com/en-us/article/n7i55j5/Webex-App-%7C-Markdown-formats) for examples), but the following have been specially formatted
 
+```
 ! represents the accent header (blue)
 $ represents the warning header (orange)
 % represents the attention header (reddish)
 * represents the attention bullet point (reddish)
+```
 
 - The nesting of bullet points doens't function like it would normmally in markdown in Webex messaging.
 
