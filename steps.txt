@@ -1,0 +1,18 @@
+Clone this repo locally and change directories into into
+
+Create and activate a virtual environment
+
+Intall the dependencies
+
+Go to https://developer.webex.com/my-apps and 'Create a New App'
+
+Choose 'Create a Bot'
+
+Fill out the required fields and click 'Add Bot'
+
+Save the Bot Access Token and Bot ID to creds.py
+
+Determine the ID of the room you want to send the message to b first sending a message in that room
+and then going to https://developer.webex.com/docs/api/v1/rooms/list-rooms
+type 'lastactivity' in the 'sortBy' field and click send. Copy that RoomID to creds.py
+

@@ -162,4 +162,8 @@ cython_debug/
 #.idea/
 
 # Credentials
-.creds.py
+creds.py
+
+# Message details
+agenda.txt
+message_id.txt
