@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a pair of Python scripts which post neat, organized meeting agendas and recaps to a Webex space of your choice. I wrote this because I was tired of manually formatting meeting agendas and recaps from text documents to Webex messages. I hope this will make managing your meetings a more pleasurable experience.
+This is a pair of Python scripts which uses Adaptive Cards to post neat, organized meeting agendas and recaps to a Webex space of your choice. I wrote this because I was tired of manually formatting meeting agendas and recaps from text documents to Webex messages. I hope this will make managing your meetings a more pleasurable experience.
 
 <br>
 
