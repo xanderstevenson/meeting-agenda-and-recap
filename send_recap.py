@@ -88,6 +88,22 @@ def format_recap(recap):
     return formatted_recap
 
 
+def save_recap_to_file(recap, meeting_name, meeting_date):
+    # Create directories if they don't exist
+    records_dir = "records"
+    meeting_dir = os.path.join(records_dir, meeting_name)
+    recaps_dir = os.path.join(meeting_dir, "recaps")
+
+    os.makedirs(recaps_dir, exist_ok=True)
+
+    # Create filename based on meeting name and date with "Recap" in the name
+    filename = f"{meeting_name} {meeting_date} Recap.txt"
+    file_path = os.path.join(recaps_dir, filename)
+
+    with open(file_path, "w") as file:
+        file.write(recap)
+
+
 def save_message_id(message_id):
     with open("message_id.txt", "w") as file:
         file.write(message_id)
@@ -131,7 +147,7 @@ def send_recap_to_webex(recap):
 
     if response.status_code == 200:
         message_id = response.json().get("id")
-        print(f"recap sent successfully!")
+        print(f"Recap sent successfully!")
         save_message_id(message_id)
     else:
         print(f"Failed to send recap. Status code: {response.status_code}")
@@ -141,5 +157,17 @@ def send_recap_to_webex(recap):
 if __name__ == "__main__":
     recap_file = "recap.txt"
     meeting_recap = read_recap_from_text_file(recap_file)
-    print("Sending new message...")
-    send_recap_to_webex(meeting_recap)
+
+    # Extract meeting name and date from the first two lines
+    recap_lines = meeting_recap.split("\n")
+    if len(recap_lines) >= 2:
+        meeting_name = recap_lines[0].strip().lstrip("! ").strip()
+        meeting_date = recap_lines[1].strip()
+
+        # Save the recap to a file
+        save_recap_to_file(meeting_recap, meeting_name, meeting_date)
+
+        print("Sending new message...")
+        send_recap_to_webex(meeting_recap)
+    else:
+        print("The recap file does not contain enough lines.")

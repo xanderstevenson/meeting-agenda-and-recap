@@ -166,3 +166,7 @@ creds.py
 
 # Message details
 message_id.txt
+
+# Records
+
+/records/
