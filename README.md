@@ -111,10 +111,23 @@ $ represents the warning header (orange)
 
 - The message is sensitive to spaces, so if you place a lot of lines between points, it will render a lot of space in the message.
 
+<br>
+
+## Keeping Records of Agendas and Recaps
+
+I've added a functionality to the **send_agenda.py** and **send_recap.py** scripts so that when they are ran, it will save the agenda or recap in a folder named after the meeting. For example, based on [agenda.txt](https://github.com/xanderstevenson/meeting-agenda-and-recap/blob/main/agenda.txt) and [recap.txt](https://github.com/xanderstevenson/meeting-agenda-and-recap/blob/main/recap.txt) in this repo, it creates files called:
+
+**records/Apple IIc Engineering Connect/agendas/Apple IIc Engineering Connect 19 August, 1987 Agenda.txt**
+
+and 
+
+**records/Apple IIc Engineering Connect/recaps/Apple IIc Engineering Connect 19 August, 1987 Recap.txt**
+
+
 
 ### Notes
 
-- The creds.py file is already in the .gitignore so it won't be pushed to GitHub but you should also add any other files to the .gitignore you don't want published to GitHub, should you choose to fork this repo.
+- The creds.py file and the /records/ directory are already in the [.gitignore](https://github.com/xanderstevenson/meeting-agenda-and-recap/blob/main/.gitignore) so they won't be pushed to GitHub, but you should also add any other files to the .gitignore you don't want published to GitHub, should you choose to fork this repo. **I recommend *at least* add agenda.txt and recap.txt to the .gitignore**
 
 - You won't be able to post messages to a room until you've added your Bot to that Room
 
