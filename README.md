@@ -127,7 +127,7 @@ and
 
 ### Notes
 
-- The creds.py file and the /records/ directory are already in the [.gitignore](https://github.com/xanderstevenson/meeting-agenda-and-recap/blob/main/.gitignore) so they won't be pushed to GitHub, but you should also add any other files to the .gitignore you don't want published to GitHub, should you choose to fork this repo. **I recommend *at least* add agenda.txt and recap.txt to the .gitignore**
+- The creds.py file and the /records/ directory are already in the [.gitignore](https://github.com/xanderstevenson/meeting-agenda-and-recap/blob/main/.gitignore) so they won't be pushed to GitHub, but you should also add any other files to the .gitignore you don't want published to GitHub, should you choose to fork this repo. **I recommend *at least* adding *agenda.txt* and *recap.txt* to the .gitignore**
 
 - You won't be able to post messages to a room until you've added your Bot to that Room
 
