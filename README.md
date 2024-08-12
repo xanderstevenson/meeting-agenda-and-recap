@@ -4,7 +4,7 @@
 
 This is a pair of Python scripts which use Adaptive Cards to post neat, organized meeting agendas and recaps to a Webex space of your choice. It also saves records of the agendas and recaps you send, storing them in folders and files named after the meeting name and date. 
 
-I wrote this because I love automation and was considered this will be a much smoother process than manually formatting meeting agendas and recaps from text documents to Webex messages. I hope this will help make managing *your* meetings a more pleasurable experience.
+I wrote this because I love automation and considered this to be a much smoother process than manually formatting meeting agendas and recaps from text documents to Webex messages. I hope this will help make managing *your* meetings a more pleasurable experience.
 
 <br>
 
