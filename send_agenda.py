@@ -17,12 +17,13 @@ def format_agenda(agenda):
         line = line.strip()
 
         if line == "- - -":
+            # Shortened line of dashes
             formatted_agenda.append(
                 {
                     "type": "TextBlock",
-                    "text": "",
+                    "text": "───────────────────────",
                     "wrap": True,
-                    "separator": True,
+                    "spacing": "medium",
                     "color": "light",
                 }
             )
