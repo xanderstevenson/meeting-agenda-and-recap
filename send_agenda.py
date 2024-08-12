@@ -13,17 +13,27 @@ def format_agenda(agenda):
     lines = agenda.split("\n")
     formatted_agenda = []
 
-    for line in lines:
+    for i, line in enumerate(lines):
         line = line.strip()
 
-        if line == "- - -":
-            # Shortened line of dashes
+        # Add controlled spacing before each line except the first one
+        if i > 0 and (lines[i - 1].strip() == "" or lines[i - 1].strip() == "- - -"):
             formatted_agenda.append(
                 {
                     "type": "TextBlock",
-                    "text": "───────────────────────",
+                    "text": " ",  # Single space to maintain some spacing
                     "wrap": True,
-                    "spacing": "medium",
+                    "spacing": "none",
+                }
+            )
+
+        if line == "- - -":
+            formatted_agenda.append(
+                {
+                    "type": "TextBlock",
+                    "text": "───────────────────────",  # Adjusted line length
+                    "wrap": True,
+                    "spacing": "none",
                     "color": "light",
                 }
             )
@@ -36,6 +46,8 @@ def format_agenda(agenda):
                     "weight": "bolder",
                     "size": "medium",
                     "color": "accent",
+                    "wrap": True,
+                    "spacing": "medium",
                 }
             )
         elif line.startswith("$ "):
@@ -47,6 +59,8 @@ def format_agenda(agenda):
                     "weight": "bolder",
                     "size": "medium",
                     "color": "warning",
+                    "wrap": True,
+                    "spacing": "medium",
                 }
             )
         elif line.startswith("% "):
@@ -58,6 +72,8 @@ def format_agenda(agenda):
                     "weight": "bolder",
                     "size": "medium",
                     "color": "attention",
+                    "wrap": True,
+                    "spacing": "medium",
                 }
             )
         elif line.startswith("* "):
@@ -66,8 +82,8 @@ def format_agenda(agenda):
                     "type": "TextBlock",
                     "text": f"* {line[2:]}",  # Adding the bullet marker
                     "wrap": True,
-                    "spacing": "none",
-                    "color": "attention",  # Apply reddish color
+                    "spacing": "small",
+                    "color": "attention",
                 }
             )
         elif line.startswith("- "):
@@ -76,15 +92,27 @@ def format_agenda(agenda):
                     "type": "TextBlock",
                     "text": f"- {line[2:]}",  # Adding the bullet marker
                     "wrap": True,
-                    "spacing": "none",
+                    "spacing": "small",
                 }
             )
         elif line.startswith("1. "):
             formatted_agenda.append(
-                {"type": "TextBlock", "text": line, "wrap": True, "spacing": "none"}
+                {
+                    "type": "TextBlock",
+                    "text": line,
+                    "wrap": True,
+                    "spacing": "small",
+                }
             )
         else:
-            formatted_agenda.append({"type": "TextBlock", "text": line, "wrap": True})
+            formatted_agenda.append(
+                {
+                    "type": "TextBlock",
+                    "text": line,
+                    "wrap": True,
+                    "spacing": "small",
+                }
+            )
 
     return formatted_agenda
 

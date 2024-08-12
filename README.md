@@ -109,7 +109,9 @@ $ represents the warning header (orange)
 
 - Once an agenda is sent, it cannot be edited as described [here](https://developer.webex.com/docs/api/v1/messages/edit-a-message) because it uses an adaptive card, which is treated an an attachment, thus preventing editing. If you don't like an agenda, you should delete it from the space manually and send a new message.
 
-- The message is sensitive to spaces, so if you place a lot of lines between points, it will render a lot of space in the message.
+- It looks best on both mobile and desktop if you just have no empty lines between each bullet point, as demonstrated in agenda.txt and recap.txt. Just keep one line of space between numberered points.
+
+- You don't need to add an empty line after - - - as it will add one by default.
 
 <br>
 

@@ -1,7 +1,7 @@
 ! Apple IIc Engineering Connect
 19 August, 1987
 
-Thank you everyine for attedning this meeting; it was a huge success. 
+Thank you everyone for attending this meeting; it was a smashing success! 
 
 - - -
 **Attendees**: Tracy Smith, Bob Folger, Melissa Sein, Tony Tiger
@@ -16,6 +16,7 @@ $ APIs:
 1. **Changelog requirement**
 - Where can we post it? (Webex, GitHub, X, etc.)
 * We will post it on the [Cisco Community](https://community.cisco.com/t5/devnet-hub/ct-p/4409j-developer-home)
+
 2. **Do we have any prioritized APIs?**
 * Bob is looking into this and will update us next meeting
 

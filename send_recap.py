@@ -13,16 +13,27 @@ def format_recap(recap):
     lines = recap.split("\n")
     formatted_recap = []
 
-    for line in lines:
+    for i, line in enumerate(lines):
         line = line.strip()
+
+        # Add controlled spacing before each line except the first one
+        if i > 0 and (lines[i - 1].strip() == "" or lines[i - 1].strip() == "- - -"):
+            formatted_recap.append(
+                {
+                    "type": "TextBlock",
+                    "text": " ",  # Single space to maintain some spacing
+                    "wrap": True,
+                    "spacing": "none",
+                }
+            )
 
         if line == "- - -":
             formatted_recap.append(
                 {
                     "type": "TextBlock",
-                    "text": "",
+                    "text": "───────────────────────",  # Adjusted line length
                     "wrap": True,
-                    "separator": True,
+                    "spacing": "none",
                     "color": "light",
                 }
             )
@@ -35,6 +46,8 @@ def format_recap(recap):
                     "weight": "bolder",
                     "size": "medium",
                     "color": "accent",
+                    "wrap": True,
+                    "spacing": "medium",
                 }
             )
         elif line.startswith("$ "):
@@ -46,6 +59,8 @@ def format_recap(recap):
                     "weight": "bolder",
                     "size": "medium",
                     "color": "warning",
+                    "wrap": True,
+                    "spacing": "medium",
                 }
             )
         elif line.startswith("% "):
@@ -57,6 +72,8 @@ def format_recap(recap):
                     "weight": "bolder",
                     "size": "medium",
                     "color": "attention",
+                    "wrap": True,
+                    "spacing": "medium",
                 }
             )
         elif line.startswith("* "):
@@ -65,8 +82,8 @@ def format_recap(recap):
                     "type": "TextBlock",
                     "text": f"* {line[2:]}",  # Adding the bullet marker
                     "wrap": True,
-                    "spacing": "none",
-                    "color": "attention",  # Apply reddish color
+                    "spacing": "small",
+                    "color": "attention",
                 }
             )
         elif line.startswith("- "):
@@ -75,15 +92,27 @@ def format_recap(recap):
                     "type": "TextBlock",
                     "text": f"- {line[2:]}",  # Adding the bullet marker
                     "wrap": True,
-                    "spacing": "none",
+                    "spacing": "small",
                 }
             )
         elif line.startswith("1. "):
             formatted_recap.append(
-                {"type": "TextBlock", "text": line, "wrap": True, "spacing": "none"}
+                {
+                    "type": "TextBlock",
+                    "text": line,
+                    "wrap": True,
+                    "spacing": "small",
+                }
             )
         else:
-            formatted_recap.append({"type": "TextBlock", "text": line, "wrap": True})
+            formatted_recap.append(
+                {
+                    "type": "TextBlock",
+                    "text": line,
+                    "wrap": True,
+                    "spacing": "small",
+                }
+            )
 
     return formatted_recap
 
