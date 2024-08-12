@@ -63,7 +63,7 @@ pip3 install -r requirements.txt
 
 - Determine the ID of the room you want to send the message to by first sending a message in that room
 and then going to https://developer.webex.com/docs/api/v1/rooms/list-rooms
-type 'lastactivity' in the 'sortBy' field and click send. Copy that RoomID to creds.py
+type 'lastactivity' in the 'sortBy' field and click send. Save the RoomID of the space you want to send the message to, along with a practice space to test messages.
 
 - Copy the Room ID, along with the Bot Token, Name, Username, and Bot ID to .creds.py and rename it as creds.py
 
