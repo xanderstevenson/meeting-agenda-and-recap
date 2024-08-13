@@ -78,7 +78,7 @@ type 'lastactivity' in the 'sortBy' field and click send. Save the RoomID of the
 python3 send_agenda.py
 ```
 
-![image](https://github.com/user-attachments/assets/025bc15b-c289-46ee-a1dd-99597fd87297)
+![image](https://github.com/xanderstevenson/meeting-agenda-and-recap/blob/main/images/agneda.png)
 
 
 or
