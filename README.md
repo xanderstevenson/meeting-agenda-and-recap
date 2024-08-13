@@ -87,7 +87,7 @@ or
 python3 send_recap.py
 ```
 
-![image](https://github.com/user-attachments/assets/ef085469-53ed-4fcc-813b-d5fc97c6bb5a)
+![image](https://github.com/xanderstevenson/meeting-agenda-and-recap/blob/main/images/recap.png)
 
 
 
