@@ -1,5 +1,7 @@
 # Meeting Agenda and Recap
 
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/xanderstevenson/meeting-agenda-and-recap)
+
 ## Overview
 
 This is a pair of Python scripts which use Adaptive Cards to post neat, organized meeting agendas and recaps to a Webex space of your choice. It also saves records of the agendas and recaps you send, storing them in folders and files named after the meeting name and date. 
