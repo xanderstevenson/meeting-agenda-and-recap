@@ -123,7 +123,7 @@ $ represents the warning header (orange)
 
 ## Keeping Records of Agendas and Recaps
 
-I've added a functionality to the **send_agenda.py** and **send_recap.py** scripts so that when they are ran, it will save the agenda or recap in a folder named after the meeting. For example, based on [agenda.txt](https://github.com/xanderstevenson/meeting-agenda-and-recap/blob/main/agenda.txt) and [recap.txt](https://github.com/xanderstevenson/meeting-agenda-and-recap/blob/main/recap.txt) in this repo, it creates files called:
+I've added a functionality to the **send_agenda.py** and **send_recap.py** scripts so that when they are ran, it will save the agenda or recap in a folder named after the meeting. For example, based on [agenda-example.txt](https://github.com/xanderstevenson/meeting-agenda-and-recap/blob/main/agenda-example.txt) and [recap-example.txt](https://github.com/xanderstevenson/meeting-agenda-and-recap/blob/main/recap-example.txt) in this repo, it creates files called:
 
 **records/Apple IIc Engineering Connect/agendas/Apple IIc Engineering Connect 19 August, 1987 Agenda.txt**
 
