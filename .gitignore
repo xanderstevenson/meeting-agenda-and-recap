@@ -168,5 +168,9 @@ creds.py
 message_id.txt
 
 # Records
-
 /records/
+
+# Actual agenda and recap
+
+agenda.txt
+recap.txt

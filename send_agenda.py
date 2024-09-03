@@ -117,20 +117,20 @@ def format_agenda(agenda):
     return formatted_agenda
 
 
-def save_agenda_to_file(agenda, meeting_name, meeting_date):
-    # Create directories if they don't exist
-    records_dir = "records"
-    meeting_dir = os.path.join(records_dir, meeting_name)
-    agendas_dir = os.path.join(meeting_dir, "agendas")
+# def save_agenda_to_file(agenda, meeting_name, meeting_date):
+#     # Create directories if they don't exist
+#     records_dir = "records"
+#     meeting_dir = os.path.join(records_dir, meeting_name)
+#     agendas_dir = os.path.join(meeting_dir, "agendas")
 
-    os.makedirs(agendas_dir, exist_ok=True)
+#     os.makedirs(agendas_dir, exist_ok=True)
 
-    # Create filename based on meeting name and date with "Agenda" in the name
-    filename = f"{meeting_name} {meeting_date} Agenda.txt"
-    file_path = os.path.join(agendas_dir, filename)
+#     # Create filename based on meeting name and date with "Agenda" in the name
+#     filename = f"{meeting_name} {meeting_date} Agenda.txt"
+#     file_path = os.path.join(agendas_dir, filename)
 
-    with open(file_path, "w") as file:
-        file.write(agenda)
+#     with open(file_path, "w") as file:
+#         file.write(agenda)
 
 
 def save_message_id(message_id):
@@ -194,7 +194,7 @@ if __name__ == "__main__":
         meeting_date = agenda_lines[1].strip()
 
         # Save the agenda to a file
-        save_agenda_to_file(meeting_agenda, meeting_name, meeting_date)
+        # save_agenda_to_file(meeting_agenda, meeting_name, meeting_date)
 
         print("Sending new message...")
         send_agenda_to_webex(meeting_agenda)

@@ -1,0 +1,16 @@
+! Apple IIc Engineering Connect
+19 August, 1987
+
+- - -
+$ APIs:
+
+1. **Changelog requirement**
+- Where can we post it? (Webex, GitHub, X, etc.)
+
+2. **Do we have any prioritized APIs?**
+
+- - -
+$ Learning Labs:
+
+1. **Where to find Learning Labs labeled with "UCS" for Cisco Product?**
+- Are there any learning labs for this?
