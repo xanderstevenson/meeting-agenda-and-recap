@@ -74,6 +74,8 @@ type 'lastactivity' in the 'sortBy' field and click send. Save the RoomID of the
 
 ## Usage
 
+- Rename **agenda-example.txt** to **agenda.txt**
+- Rename **recap-example.txt** to **recap.txt**
 - Fill in the agenda.txt or recap.txt and run the appropriate script:
 
 ```bash
@@ -128,6 +130,8 @@ I've added a functionality to the **send_agenda.py** and **send_recap.py** scrip
 and 
 
 **records/Apple IIc Engineering Connect/recaps/Apple IIc Engineering Connect 19 August, 1987 Recap.txt**
+
+> Note: I've commented out the functions an commands in both scripts (send_agenda.py and send_recap.py) as I don't want to keep records of my meetings, but you can un-comment them and they will run as expected.
 
 <br>
 
